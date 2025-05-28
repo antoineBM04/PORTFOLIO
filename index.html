@@ -1,63 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Antoine Berry Mouton – Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-white text-black font-mono">
-    <!-- Header -->
-    <header class="flex justify-between items-center px-6 py-4 text-sm uppercase">
-      <div class="font-bold tracking-wide">Antoine_Berry_Mouton</div>
-      <nav class="space-x-6 md:space-x-12 lg:space-x-24 xl:space-x-48
-            mr-6 md:mr-12 lg:mr-24 xl:mr-48
-            hidden md:block text-xs">
-        <a>[2025]</a>
-        <a href="work.html" class="hover:underline">Work</a>
-        <a href="contact.html" class="hover:underline">Contact</a>
-        <a href="about.html" class="hover:underline">About_me</a>
-      </nav>
-      <div class="md:hidden">☰</div>
-    </header>
-    <main class="hidden">
-      sm
-    </main>
-    <main class="md:hidden">
-      md
-    </main>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Grille 10 rem fixe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black font-mono">
 
-    <main class="2xl:hidden m-6">
-      <div class="grid
-            grid-cols-[200px_1fr_2fr] 
-            grid-rows-[auto_minmax(100px,1fr)_50px] ">
-            
-        <!-- Ligne 1 -->
-        <div class="col-start-1 col-span-5 row-start-1 row-span-1">
-          <div class="flex gap-1 md:gap-2">
-            <video class="" autoplay muted loop > <source src="./Files/showreel/showreel_rough.MOV" type="video/mp4"> </video>
-            <p class="text-xs font-bold">[01]</p>
-          </div>
-        </div>
-
-        <div class="col-start-6 col-span-3 row-start-1 row-span-1 self-center">
-          <img src="./Files/PORSCHE/porsche.png" alt="Projet 2" class="" />
-        </div>
-
-        <div class="col-start-10 col-span-3 row-start-1 row-span-2">
-          <img src="./Files/Junk_drawer/MOTO_ohlins_04_0124.PNG" alt="Projet 3" class="aspect-[16/26] object-cover " />
-        </div>
-
-        <!-- Ligne 1 -->
-        <div class="col-start-2 col-span-4 row-start-3 row-span-1">
-        <img src="./Files/PORSCHE/hangar.png" alt="Projet 6" class="" />
-        </div>
-
-        <div class="col-start-1 col-span-1 row-start-3 row-span-1">
-          <img src="./Files/Junk_drawer/MOTO_ohlins_04_0124.PNG" alt="Projet 3" class=" aspect-[16/26] object-cover " />
-        </div>
-
+  <!-- Header -->
+  <header class="flex justify-between items-center px-6 py-4 text-sm uppercase">
+    <div class="font-bold tracking-wide">Antoine_Berry_Mouton</div>
+    <nav class="hidden 
+    md:flex space-x-6 md:space-x-12 lg:space-x-24 xl:space-x-48 
+    mr-24
+    text-xs">
+      <a>[2025]</a>
+      <a href="work.html"    class="hover:underline">Work</a>
+      <a href="contact.html" class="hover:underline">Contact</a>
+      <a href="about.html"   class="hover:underline">About_me</a>
+    </nav>
+    <div class="md:hidden">☰</div>
+  </header>
+<body>
+  <!-- Première grille -->
+  <div class="grid grid-cols-12 grid-rows-8 gap-12 m-8">
+    <div class="col-span-6 row-span-3">
+      <div class="flex gap-2">
+        <video autoplay muted loop
+              class="">
+          <source src="./Files/showreel/showreel_rough.MOV" type="video/mp4">
+        </video>
+        <span class="text-xs font-bold">[01]</span>
       </div>
-    </main>
-  </body>
+    </div>
+
+    <img 
+      src="./Files/PORSCHE/porsche.png" 
+      alt="Projet 3" 
+      class="col-span-4 row-span-3 col-start-7 w-3/4 mx-12 my-24" 
+    />
+
+    <img 
+      src="./Files/Junk_drawer/MOTO_ohlins_04_0124.PNG" 
+      alt="Projet 3" 
+      class="col-span-3 row-span-4 col-start-11" 
+    />
+
+    <div class="col-span-4 row-span-2 row-start-4 
+                aspect-[2.475/1] overflow-hidden
+                m-8">
+      <img 
+        src="./Files/PORSCHE/hangar.png" 
+        alt="Projet 3" 
+        class="w-full h-full object-cover object-center" 
+      />
+    </div>
+    
+    <div class="col-span-4 row-span-2 col-start-6 -mx-24 -my-3 row-start-4">
+      <div class="flex gap-2">
+        <span class="text-xs font-bold">[01]</span>
+        <div class="aspect-[2.291/1] overflow-hidden">
+          <img 
+            src="./Files/PORSCHE/wheel.png" 
+            alt="Projet 3" 
+            class="w-full h-full object-cover object-center" 
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="col-span-5 row-span-3 row-start-6">
+      <div class="flex gap-2">
+        <img 
+          src="./Files/PORSCHE/rear wing.png" 
+          alt="Projet 3" 
+          class="" 
+        />
+        <span class="text-xs font-bold">[01]</span>
+      </div>
+    </div>
+
+
+    <img 
+      src="./Files/Junk_drawer/eyes-mask.webp" 
+      alt="Projet 3" 
+      class="col-span-4 row-span-2 col-start-6 row-start-7 mt-4" 
+    />
+
+    <img 
+      src="./Files/PORSCHE/pixel.png" 
+      alt="Projet 3" 
+      class="col-span-3 row-span-2 col-start-10 row-start-6 self-end w-4/5 ml-12" 
+    />
+  </div>
+  <!-- Deuxième grille -->
+  <div>
+
+  </div>
+  <!-- Footer -->
+  <footer>
+
+  </footer>
+</body>
 </html>

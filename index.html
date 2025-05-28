@@ -1,63 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Antoine Berry Mouton – Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-white text-black font-mono">
-    <!-- Header -->
-    <header class="flex justify-between items-center px-6 py-4 text-sm uppercase">
-      <div class="font-bold tracking-wide">Antoine_Berry_Mouton</div>
-      <nav class="space-x-6 md:space-x-12 lg:space-x-24 xl:space-x-48
-            mr-6 md:mr-12 lg:mr-24 xl:mr-48
-            hidden md:block text-xs">
-        <a>[2025]</a>
-        <a href="work.html" class="hover:underline">Work</a>
-        <a href="contact.html" class="hover:underline">Contact</a>
-        <a href="about.html" class="hover:underline">About_me</a>
-      </nav>
-      <div class="md:hidden">☰</div>
-    </header>
-    <main class="hidden">
-      sm
-    </main>
-    <main class="md:hidden">
-      md
-    </main>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Collage CSS-Grid aléatoire</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black font-mono">
 
-    <main class="2xl:hidden m-6">
-      <div class="grid
-            grid-cols-[200px_1fr_2fr] 
-            grid-rows-[auto_minmax(100px,1fr)_50px] ">
-            
-        <!-- Ligne 1 -->
-        <div class="col-start-1 col-span-5 row-start-1 row-span-1">
-          <div class="flex gap-1 md:gap-2">
-            <video class="" autoplay muted loop > <source src="./Files/showreel/showreel_rough.MOV" type="video/mp4"> </video>
-            <p class="text-xs font-bold">[01]</p>
-          </div>
-        </div>
+  <!-- Header -->
+  <header class="flex justify-between items-center px-6 py-4 text-sm uppercase">
+    <div class="font-bold tracking-wide">Antoine_Berry_Mouton</div>
+    <nav class="hidden 
+    md:flex space-x-6 md:space-x-12 lg:space-x-24 xl:space-x-48 
+    mr-6 md:mr-12 lg:mr-24 xl:mr-32
+    text-xs">
+      <a>[2025]</a>
+      <a href="work.html"    class="hover:underline">Work</a>
+      <a href="contact.html" class="hover:underline">Contact</a>
+      <a href="about.html"   class="hover:underline">About_me</a>
+    </nav>
+    <div class="md:hidden">☰</div>
+  </header>
 
-        <div class="col-start-6 col-span-3 row-start-1 row-span-1 self-center">
-          <img src="./Files/PORSCHE/porsche.png" alt="Projet 2" class="" />
-        </div>
+  <!-- Grid container plein écran -->
+  <div id="collage"
+       class="grid
+              grid-cols-12
+              auto-rows-[minmax(150px,auto)]
+              gap-10
+              grid-flow-row-dense
+              w-full h-screen
+              p-6
+              overflow-auto">
 
-        <div class="col-start-10 col-span-3 row-start-1 row-span-2">
-          <img src="./Files/Junk_drawer/MOTO_ohlins_04_0124.PNG" alt="Projet 3" class="aspect-[16/26] object-cover " />
-        </div>
+    <!-- Tes blocs “.item” -->
+    <div class="item">
+      <img src="Files/PORSCHE/hangar.png" class="w-full h-full object-cover" alt="">
+    </div>
+    <div class="item">
+      <video class="w-full h-full object-cover" autoplay muted loop>
+        <source src="./Files/showreel/showreel_rough.MOV" type="video/mp4">
+      </video>
+      <p class=" text-xs font-bold">[01]</p>
+    </div>
+    <div class="item">
+      <img src="Files/PORSCHE/rear wing.png" class="w-full h-full object-cover" alt="">
+      <p class=" text-xs font-bold">[02]</p>
+    </div>
+    <!-- … ajoute autant de <div class="item"> que tu veux -->
+    <div class="item">
+      <img src="Files/PORSCHE/porsche.png" class="w-full h-full object-cover" alt="">
+      <p class=" text-xs font-bold">[03]</p>
+    </div>
+    <div class="item">
+      <img src="Files/Junk_drawer/IMG_8614.PNG" class="w-full h-full object-cover" alt="">
+    </div>
+    <div class="item">
+      <img src="Files/PORSCHE/cloud point car.png" class="w-full h-full object-cover" alt="">
+    </div>
+    <div class="item">
+      <img src="Files/PORSCHE/pixel.png" class="w-full h-full object-cover" alt="">
+    </div>
+    <div class="item">
+      <img src="Files/PORSCHE/slice effect.png" class="w-full h-full object-cover" alt="">
+    </div>
+    <div class="item">
+      <img src="Files/PORSCHE/wheel.png" class="w-full h-full object-cover" alt="">
+    </div>
 
-        <!-- Ligne 1 -->
-        <div class="col-start-2 col-span-4 row-start-3 row-span-1">
-        <img src="./Files/PORSCHE/hangar.png" alt="Projet 6" class="" />
-        </div>
+  </div>
 
-        <div class="col-start-1 col-span-1 row-start-3 row-span-1">
-          <img src="./Files/Junk_drawer/MOTO_ohlins_04_0124.PNG" alt="Projet 3" class=" aspect-[16/26] object-cover " />
-        </div>
+  <script>
+    // À l’init, on va donner à chaque .item un col-span et un row-span aléatoire
+    document.addEventListener('DOMContentLoaded', () => {
+      const items = document.querySelectorAll('#collage .item');
+      items.forEach(el => {
+        // col-span entre 3 et 5
+        const c = Math.floor(Math.random() * 3) + 3;
+        // row-span entre 1 et 3
+        const r = Math.floor(Math.random() * 3) + 1;
+        el.classList.add(`col-span-${c}`, `row-span-${r}`);
+      });
+    });
+  </script>
 
-      </div>
-    </main>
-  </body>
+</body>
 </html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth ">
+<head>
+  <meta charset="UTF-8">
+  <title>f1_lego</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    fetch("../Components/header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("header-placeholder").innerHTML = data;
+      });
+
+    fetch("../Components/footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+  <link rel="stylesheet" href="../Styles/fonts.css">
+</head>
+<body class="bg-white text-black font-[CourrierNew]">
+
+  <div class="sticky top-1 self-start" id="header-placeholder"></div>
+  
+  <div class="grid grid-cols-12 gap-x-5 gap-y-[188px]">
+    <div class="fixed -z-10 grid grid-cols-12 gap-x-5 mt-20">
+      <div class="col-start-2 col-span-11 text-sm font-mono font-bold pb-4 uppercase">
+        f1_lego
+      </div>
+
+      <div class="col-start-2 col-span-5 text-xs leading-relaxed">
+Projet personnel autour d’un sujet unique :<br>
+sublimer une Formule 1 LEGO comme si elle était réelle.<br>
+À travers une série d’expérimentations visuelles réalisées <br>
+sur Cinema 4D et Redshift, le projet explore la tension entre construction et déconstruction.<br>
+Pièces qui se détachent, s’assemblent, explosent ou lévitent, tout devient prétexte à jouer avec les codes de la fabrication, du détail mécanique et du mouvement.<br>
+La monoplace devient une sculpture dynamique, entre hommage <br>
+à l’ingénierie et projection d’un jouet dans un imaginaire de grands adulte.<br>
+Un exercice libre, pensé pour tester des idées de narration visuelle, d’animation, et de mise en scène autour d’un objet iconique.<br>
+      </div>
+      <div class="col-start-11 font-mono text-xs font-bold text-left">
+        2024
+      </div>
+    </div>
+
+    <img 
+      src="../Files/f1_lego/f1_lego_01.png" 
+      class="col-start-4 col-span-8" 
+    />
+
+    <video autoplay loop class="col-start-2 col-span-4 mt-80">
+      <source src="../Files/f1_lego/f1_lego_03.mp4" type="video/mp4">
+    </video>
+
+    <video autoplay loop class="col-start-7 col-span-5">
+      <source src="../Files/f1_lego/f1_lego_02.mp4" type="video/mp4">
+    </video>
+
+    <video autoplay loop class="col-start-4 col-span-8">
+      <source src="../Files/f1_lego/f1_lego_04.mp4" type="video/mp4">
+    </video>
+
+    <img 
+      src="../Files/f1_lego/f1_lego_05.png" 
+      class="col-start-2 col-span-9" 
+    />
+
+    <img 
+      src="../Files/f1_lego/f1_lego_06.png" 
+      class="col-start-3 col-span-9" 
+    />
+
+    <video autoplay loop class="col-start-2 col-span-4 mt-28">
+      <source src="../Files/f1_lego/f1_lego_08.mp4" type="video/mp4">
+    </video>
+
+    <video autoplay loop class="col-start-7 col-span-5">
+      <source src="../Files/f1_lego/f1_lego_07.mp4" type="video/mp4">
+    </video>
+
+    <video autoplay loop class="col-start-3 col-span-6">
+      <source src="../Files/f1_lego/f1_lego_09.mp4" type="video/mp4">
+    </video>
+    
+    <img 
+      src="../Files/f1_lego/f1_lego_10.png" 
+      class="col-start-6 col-span-6" 
+    />
+
+    <img 
+      src="../Files/f1_lego/f1_lego_11.png" 
+      class="col-start-5 col-span-6" 
+    />
+
+    <video autoplay loop class="col-start-2 col-span-5">
+      <source src="../Files/f1_lego/f1_lego_12.mp4" type="video/mp4">
+    </video>
+
+    <video autoplay loop class="col-start-8 col-span-4 mt-80">
+      <source src="../Files/f1_lego/f1_lego_13.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div id="footer-placeholder"></div>
+</body>
+</html>

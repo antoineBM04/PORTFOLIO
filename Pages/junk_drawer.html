@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth ">
+<head>
+  <meta charset="UTF-8">
+  <title>JUNK_DRAWER</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    fetch("../Components/header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("header-placeholder").innerHTML = data;
+      });
+
+    fetch("../Components/footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+  <link rel="stylesheet" href="../Styles/fonts.css">
+</head>
+<body class="bg-white text-black font-[CourrierNew]">
+
+  <div class="sticky top-1 self-start" id="header-placeholder"></div>
+  
+  <div class="grid grid-cols-12 gap-x-5 gap-y-[188px]">
+    <div class="fixed -z-10 grid grid-cols-12 gap-x-5 mt-20">
+      <div class="col-start-2 col-span-11 text-sm font-mono font-bold pb-4 uppercase">
+        junk_drawer
+      </div>
+
+      <div class="col-start-2 col-span-5 text-xs leading-relaxed">
+Une sélection d’expérimentations 3D. <br>
+Cette page rassemble des essais visuels, des recherches de texture, des simulations inachevées et des animations sans destination précise.<br>
+Un espace libre, où les idées s’accumulent sans ordre ni logique, simplement guidées par l’envie de tester, de manipuler, d’explorer.<br>
+Des formes brutes, des accidents visuels, des directions ouvertes, autant de morceaux d’exploration rassemblés aux même endroit.
+      </div>
+      <div class="col-start-11 font-mono text-xs font-bold text-left">
+        2024
+      </div>
+    </div>
+
+    <img 
+      src="../Files/junk_drawer/junk_drawer_01.png" 
+      class="col-start-4 col-span-7" 
+    />
+
+    <img 
+      src="../Files/junk_drawer/junk_drawer_02.png" 
+      class="col-start-2 col-span-6" 
+    />
+
+    <img 
+      src="../Files/junk_drawer/junk_drawer_03.png" 
+      class="col-start-6 col-span-6" 
+    />
+
+    <video autoplay loop class="col-start-2 col-span-6">
+      <source src="../Files/junk_drawer/junk_drawer_04.mp4" type="video/mp4">
+    </video>
+
+    <img 
+      src="../Files/junk_drawer/junk_drawer_05.png" 
+      class="col-start-6 col-span-5" 
+    />
+
+    <video autoplay loop class="col-start-2 col-span-4">
+      <source src="../Files/junk_drawer/junk_drawer_06.mp4" type="video/mp4">
+    </video>
+
+    <video autoplay loop class="col-start-7 col-span-5 mt-80">
+      <source src="../Files/junk_drawer/junk_drawer_07.mp4" type="video/mp4">
+    </video>
+
+    <img 
+      src="../Files/junk_drawer/junk_drawer_08.png" 
+      class="col-start-3 col-span-8" 
+    />
+
+    <img 
+      src="../Files/junk_drawer/junk_drawer_09.png" 
+      class="col-start-4 col-span-8" 
+    />
+
+    <img 
+      src="../Files/junk_drawer/junk_drawer_10.png" 
+      class="col-start-2 col-span-6" 
+    />
+
+    <img 
+      src="../Files/junk_drawer/junk_drawer_11.png" 
+      class="col-start-3 col-span-9" 
+    />
+
+    <img 
+      src="../Files/junk_drawer/junk_drawer_12.png" 
+      class="col-start-4 col-span-8" 
+    />
+
+    <img 
+      src="../Files/junk_drawer/junk_drawer_13.png" 
+      class="col-start-2 col-span-6" 
+    />
+
+    <video autoplay loop class="col-start-2 col-span-4 mt-80">
+      <source src="../Files/junk_drawer/junk_drawer_15.mp4" type="video/mp4">
+    </video>
+
+    <img 
+      src="../Files/junk_drawer/junk_drawer_14.jpg" 
+      class="col-start-7 col-span-5" 
+    />
+
+    <img 
+      src="../Files/junk_drawer/junk_drawer_17.png" 
+      class="col-start-2 col-span-4 mt-60" 
+    />
+
+    <video autoplay loop class="col-start-7 col-span-5">
+      <source src="../Files/junk_drawer/junk_drawer_16.mp4" type="video/mp4">
+    </video>
+
+    <img 
+      src="../Files/junk_drawer/junk_drawer_18.png" 
+      class="col-start-3 col-span-9" 
+    />
+  </div>
+
+  <div id="footer-placeholder"></div>
+</body>
+</html>

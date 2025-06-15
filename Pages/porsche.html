@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth ">
+<head>
+  <meta charset="UTF-8">
+  <title>PORSCHE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    fetch("../Components/header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("header-placeholder").innerHTML = data;
+      });
+
+    fetch("../Components/footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+  <link rel="stylesheet" href="../Styles/fonts.css">
+</head>
+<body class="bg-white text-black font-[CourrierNew]">
+
+  <div class="sticky top-1 self-start" id="header-placeholder"></div>
+  
+  <div class="grid grid-cols-12 gap-x-5 gap-y-[188px]">
+    <div class="fixed -z-10 grid grid-cols-12 gap-x-5 mt-20">
+      <div class="col-start-2 col-span-11 text-sm font-mono font-bold pb-4 uppercase">
+        PORSCHE
+      </div>
+
+      <div class="col-start-2 col-span-5 text-xs leading-relaxed">
+Pour ce projet fictif imaginé pour Porsche, nous avons conçu un film 3D expérimental autour de la légendaire 911 GT3R.<br>
+Pensé comme un hommage artistique à la transformation et à l’héritage mécanique, le film retrace la métamorphose d’un ancien modèle démonté, jusqu’à l’émergence d’une 911 GT3R contemporaine — plus affûtée, plus radicale. Aucune narration explicite : juste la matière, le rythme et la forme au service du geste de fabrication. Entre abstraction et tension mécanique, chaque séquence explore la construction comme un langage visuel.<br>
+Réalisé entièrement en 3D à l’aide de Cinema 4D et TouchDesigner, ce projet est né d’une série d’expérimentations libres, mêlant design génératif et animation procédurale.
+      </div>
+      <div class="col-start-11 font-mono text-xs font-bold text-left">
+        2024
+      </div>
+    </div>
+
+
+    <img 
+      src="../Files/porsche/porsche_01.png" 
+      class="col-start-4 col-span-8" 
+    />
+
+    <img 
+      src="../Files/porsche/porsche_02.png" 
+      class="col-start-6 col-span-6" 
+    />
+
+    <img 
+      src="../Files/porsche/porsche_03.png" 
+      class="col-start-2 col-span-7" 
+    />
+<!-- 
+    <video autoplay loop class="col-start-2 col-span-10">
+      <source src="../Files/porsche/porsche_04.mp4" type="video/mp4">
+    </video>
+  -->
+
+    <video autoplay loop class="col-start-4 col-span-8">
+      <source src="../Files/porsche/porsche_05.mp4" type="video/mp4">
+    </video>
+
+    <video autoplay loop class="col-start-2 col-span-9">
+      <source src="../Files/porsche/porsche_06.mp4" type="video/mp4">
+    </video>
+
+    <img 
+      src="../Files/porsche/porsche_07.png" 
+      class="col-start-2 col-span-8" 
+    />
+
+    <video autoplay loop class="col-start-3 col-span-9">
+      <source src="../Files/porsche/porsche_08.mp4" type="video/mp4">
+    </video>
+
+    <video autoplay loop class="col-start-7 col-span-5">
+      <source src="../Files/porsche/porsche_09.mp4" type="video/mp4">
+    </video>
+
+    <img 
+      src="../Files/porsche/porsche_10.png" 
+      class="col-start-2 col-span-7" 
+    />
+
+    <img 
+      src="../Files/porsche/porsche_11.png" 
+      class="col-start-6 col-span-6" 
+    />
+
+    <img 
+      src="../Files/porsche/porsche_12.png" 
+      class="col-start-2 col-span-7" 
+    />
+
+    <img 
+      src="../Files/porsche/porsche_13.png" 
+      class="col-start-2 col-span-6" 
+    />
+
+    <img 
+      src="../Files/porsche/porsche_11.png" 
+      class="col-start-6 col-span-6" 
+    />
+
+    <img 
+      src="../Files/porsche/porsche_12.png" 
+      class="col-start-2 col-span-8" 
+    />
+  </div>
+
+  <div id="footer-placeholder"></div>
+</body>
+</html>

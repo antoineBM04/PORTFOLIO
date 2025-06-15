@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth ">
+<head>
+  <meta charset="UTF-8">
+  <title>TOUCH_DESIGNER</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    fetch("../Components/header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("header-placeholder").innerHTML = data;
+      });
+
+    fetch("../Components/footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+  <link rel="stylesheet" href="../Styles/fonts.css">
+</head>
+<body class="bg-white text-black font-[CourrierNew]">
+
+  <div class="sticky top-1 self-start" id="header-placeholder"></div>
+  
+  <div class="grid grid-cols-12 gap-x-5 gap-y-[188px]">
+    <div class="fixed -z-10 grid grid-cols-12 gap-x-5 mt-20">
+      <div class="col-start-2 col-span-11 text-sm font-mono font-bold pb-4 uppercase">
+        touch_designer
+      </div>
+
+      <div class="col-start-2 col-span-5 text-xs leading-relaxed">
+Cette page regroupe une série d’expérimentations personnelles réalisées sur TouchDesigner, un environnement de création visuelle en temps réel, pensé pour le design génératif, l’interaction et la performance audiovisuelle.<br>
+L’objectif : sortir des habitudes de production linéaire et explorer un nouveau langage visuel, plus réactif, plus modulaire.<br>
+ Ces tests m’ont permis de mieux comprendre la logique procédurale du logiciel — et d’ouvrir la voie à de nouvelles esthétiques, à mi-chemin entre code, art visuel et motion design.<br>
+Un espace libre, sans brief ni contrainte, dédié à la curiosité et à l’apprentissage. 
+      </div>
+      <div class="col-start-11 font-mono text-xs font-bold text-left">
+        2024
+      </div>
+    </div>
+
+    <video autoplay loop class="col-start-4 col-span-7">
+      <source src="../Files/touch_designer/touch_designer_01.mp4" type="video/mp4">
+    </video>
+
+    <video autoplay loop class="col-start-2 col-span-4">
+      <source src="../Files/touch_designer/touch_designer_02.mp4" type="video/mp4">
+    </video>
+
+    <video autoplay loop class="col-start-7 col-span-5 mt-80">
+      <source src="../Files/touch_designer/touch_designer_03.mp4" type="video/mp4">
+    </video>
+
+    <video autoplay loop class="col-start-5 col-span-7">
+      <source src="../Files/touch_designer/touch_designer_04.mp4" type="video/mp4">
+    </video>
+
+    <video autoplay loop class="col-start-2 col-span-4">
+      <source src="../Files/touch_designer/touch_designer_05.mp4" type="video/mp4">
+    </video>
+
+    <video autoplay loop class="col-start-7 col-span-5 mt-60">
+      <source src="../Files/touch_designer/touch_designer_06.mp4" type="video/mp4">
+    </video>
+
+    <video autoplay loop class="col-start-4 col-span-8">
+      <source src="../Files/touch_designer/touch_designer_07.mp4" type="video/mp4">
+    </video>
+
+    <video autoplay loop class="col-start-2 col-span-8">
+      <source src="../Files/touch_designer/touch_designer_08.mp4" type="video/mp4">
+    </video>
+<!-- 
+    <video autoplay loop class="col-start-2 col-span-10">
+      <source src="../Files/touch_designer/touch_designer_09.mp4" type="video/mp4">
+    </video>
+-->
+    <video autoplay loop class="col-start-2 col-span-6">
+      <source src="../Files/touch_designer/touch_designer_10.mp4" type="video/mp4">
+    </video>
+
+    <img 
+      src="../Files/touch_designer/touch_designer_11.png" 
+      class="col-start-3 col-span-5" 
+    />
+
+    <video autoplay loop class="col-start-6 col-span-6">
+      <source src="../Files/touch_designer/touch_designer_12.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div id="footer-placeholder"></div>
+</body>
+</html>

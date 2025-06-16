@@ -4,20 +4,11 @@
   <meta charset="UTF-8">
   <title>HOME</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    fetch("../Components/header.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("header-placeholder").innerHTML = data;
-      });
-
-    fetch("../Components/footer.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
-  </script>
-  <link rel="stylesheet" href="../Styles/fonts.css">
+  <script src="/Scripts/pages_script.js"></script>
+  <link rel="stylesheet" href="/Styles/fonts.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/Favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Favicons/favicon-16x16.png">
+  <link rel="shortcut icon" href="Favicons/favicon.ico">
 </head>
 <body class="bg-white text-black font-[CourrierNew]">
 
